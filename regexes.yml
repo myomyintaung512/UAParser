@@ -63,7 +63,7 @@ operating_system_parsers:
       family_replacement: 'BlackBerry OS'
     - regex: '(Black[bB]erry)\s?(\d+)'
       family_replacement: 'BlackBerry OS'
-    - regex: '(Android)[- ](\d+)\.(\d+)(?:[.\-]([a-z0-9]+))?'
+    - regex: '(Android)[\- ](\d+)\.(\d+)(?:[.\-]([a-z0-9]+))?'
     - regex: '(CPU OS|iPhone OS) (\d+)_(\d+)(?:_(\d+))?'
       family_replacement: iOS
     - regex: '(XBLWP7)'
@@ -96,13 +96,13 @@ operating_system_parsers:
 
 email_client_parsers:
     - regex: '(Thunderbird)/(\d+)\.(\d+)(?:\.(\d+))?'
-    - regex: '(Lotus-Notes)/(\d+)\.(\d+)(?:\.(\d+))?'
+    - regex: '(Lotus\-Notes)/(\d+)\.(\d+)(?:\.(\d+))?'
       family_replacement: Lotus Notes
     - regex: '(Postbox)[/ ](\d+)\.(\d+)(?:\.(\d+))?'
-    - regex: '(Outlook-Express/7)'
+    - regex: '(Outlook\-Express/7)'
       family_replacement: Windows Live Mail
       major_replacement: 2009
-    - regex: '(Outlook-Express)/(\d+)'
+    - regex: '(Outlook\-Express)/(\d+)'
       family_replacement: Outlook-Express
     - regex: '(MSOffice 15|Outlook 15)'
       family_replacement: Outlook
